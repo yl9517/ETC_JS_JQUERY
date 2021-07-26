@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- 주의!! : checkbox와 radio는 같은 카테고리끼리 무조건 name을 같게 해야 같은 그룹으로 인식!! -->
+
+    <form method="get" action="result.jsp">
+        <fieldset style="width: 500px;">
+                 <legend>좋아하는 분식</legend>
+            <input type="checkbox" name="food" value="떡볶이" id="f1" checked>
+            <label for="f1">떡볶이</label>
+            <input type="checkbox" name="food" value="치킨" id="f2">
+            <label for="f2">치킨</label>
+            <input type="checkbox" name="food" value="어묵" id="f3">
+            <label for="f3">어묵</label>
+            <input type="checkbox" name="food" value="순대" id="f4">
+            <label for="f4">순대</label>
+            <input type="checkbox" name="food" value="만두" id="f5">
+            <label for="f5">만두</label>
+        </fieldset>
+
+        <input type="radio" name="degree" value="1" id="d1">
+        <label for="d1">1학년</label>
+        <input type="radio" name="degree" value="2" id="d2">
+        <label for="d2">2학년</label>
+        <input type="radio" name="degree" value="3" id="d3" checked>
+        <label for="d3">3학년</label>   
+
+        <input type="submit" value="전송">
+
+        <input type="image" alt="Login" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png">
+
+    </form>
+</body>
+</html>

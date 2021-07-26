@@ -1,0 +1,30 @@
+#shadow{ /* 가로 세로 번짐정도 색깔 */
+    text-shadow: 3px 3px 5px red,
+                 15px 10px 5px rgb(47, 87, 199),
+                 20px 20px 5px green;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+p.align1{
+    text-align: justify;  /* left, right, center, justify */
+    /* jstify : 양끝 줄맞춰 정렬*/
+
+    letter-spacing: 5px; /* 자간(글자 간 간격) */
+    word-spacing: 5px;  /* 단어 간 간격 */
+}
+
+table{
+    width: 750px; height: 300px;
+    border-collapse: collapse;
+}
+
+/*
+    text-align : 가로정렬
+    vertical-align : 세로정렬
+*/
+td{
+    border:1px solid silver;
+    text-align: center;
+    vertical-align: middle;
+}

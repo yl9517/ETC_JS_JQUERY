@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::selection{  /* 두래그 할때 색 나타남 */
+            background-color: yellow;
+        }
+
+        ::selection{
+            color: red;
+        }
+        div::after{ /* div 뒤에 */
+            font-weight: bolder;
+            color:violet;
+            content: ">>>";
+        }
+
+    </style>
+</head>
+<body>
+    <p>문단 1영역입니다</p>
+    <div>안녕하세요 여기는 html 및 css내용입니다.</div>
+</body>
+</html>

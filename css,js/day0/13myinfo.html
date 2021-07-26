@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 550px;
+        }
+        ul li{
+            list-style-type: none;
+            border : 1px solid silver
+        }
+        
+        ul li label.t{
+            background-color: pink;
+            display: inline-block;
+            padding: 20px 40px;
+        }
+        ul li.send input{
+            display: inline-block;
+            margin: 10px 0 0 30px;
+            padding: 5px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="r.jsp" method="get">
+        <ul>
+            <li>
+                <label class="t" for="name">이름 </label> <input type="text" id="name" name="name">
+            </li>
+            <li>
+                <label class="t" for="age">나이 </label> <input type="text" id="age" name="age">
+            </li>
+            <li>
+                <label class="t"> 성별 </label>
+                <input type="radio" value="yes" id="man" name="gender" > 
+                <label for="man">남</label>
+                <input type="radio" value="no" id="woman" name="gender" checked> 
+                <label for="woman">여</label>
+            </li>
+            <li class="send">
+                <input type="submit" value="가입하기">
+                <input type="submit" value="취소하기">
+            </li>
+        </ul>
+
+    </form>
+</body>
+</html>l

@@ -1,0 +1,18 @@
+div.f1{
+    font-weight: bolder;
+}
+div.f2{
+    font-weight: bold;
+}
+div.f3{
+    font-weight: 200;
+}
+
+div.trans{
+    text-transform: uppercase;
+}
+
+div.dec{
+    text-decoration: red line-through double;
+    font-size: 20px;
+}

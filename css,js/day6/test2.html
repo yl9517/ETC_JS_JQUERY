@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* form태그 */
+        #wrap{
+            width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        form{
+            margin: 50px 0 0 110px;
+        }
+        /* 표 */
+        .board{
+            border : 2px solid silver;
+            width: 150px;
+            min-height: 250px;
+            float: left;
+            margin: 40px;
+        }
+        img{
+            display: flex;
+            flex-flow: wrap column;
+            margin-top: 90px;
+            position: absolute;
+            right: 57%;
+            cursor: pointer;
+        }
+        img#left{
+            margin-top: 160px;
+        }
+
+        .board p{
+            margin: 0 auto;
+            border-bottom: 1px solid silver;
+            text-align: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .board p:hover{
+            background-color: snow;
+            font-weight: bolder;
+        }
+        .clickSt{
+            background-color: snow;
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <form>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name">
+            <input type="button" id="btn" value="추가">
+        </form>
+
+        <div id="table1" class="board">
+        </div>  
+        
+        <div id="table2" class="board"
+        >
+        </div>  
+
+        <img src="../img/right.png" alt="right" width="40px" id="right">
+        <img src="../img/left.png" alt="left" width="40px" id="left">
+    </div>
+    <script src="../js/test2.js"></script>
+</body>
+</html>

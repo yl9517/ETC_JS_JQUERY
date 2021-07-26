@@ -1,0 +1,13 @@
+p{  
+    font-family: "굴림","돋움",verdana;
+    font-size: 12px;
+    text-align: justify;
+    text-indent: 12px; /* 들여쓰기 */
+}
+p.overflow{
+    width: 200px; height: 200px;
+    border: 2px solid silver;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* ...표시 */
+}

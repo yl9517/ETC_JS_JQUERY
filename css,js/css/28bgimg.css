@@ -1,0 +1,12 @@
+div{
+    width: 700px; height: 1000px;
+    border: 3px solid darkblue;
+    background: url("../img/img1.jpg") no-repeat;
+    background-size: 100px;
+    background-position: 30px 100px;
+    overflow: scroll;
+
+    background-attachment: fixed;  /* 화면 따라오며 무조건 고정 */
+    background-attachment: scroll; /* 해당 스크롤 안에서 따라오며 고정*/
+    background-attachment: local;  /* 해당 자리 고정(안따라옴) */
+}

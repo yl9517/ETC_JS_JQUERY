@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{   
+            box-sizing: border-box;
+        }
+        body{
+            width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        li{
+            float: left;
+            border : 1px solid hotpink;
+            background-color: pink;
+            list-style: none;
+            width: 200px;
+            height: 65px;
+            line-height: 60px;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        li:nth-child(2){
+            border-left: none;
+            border-right: none;
+        }
+
+        div#result{
+            float: left;
+            border-left : 1px solid hotpink;
+            border-bottom : 1px solid hotpink;
+            border-right : 1px solid hotpink;
+            position: relative;
+            left: 40px;
+            width: 600px;
+            height: 450px;
+            line-height: 350px;
+        }
+
+        .bg{
+            background-color:white;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+        <ul id="table">
+            <li class="bg">코스피</li>
+            <li>코스닥</li>
+            <li>코스피200</li>
+        </ul>
+        <div id="result">
+            <p>코스피입니다</p>
+        </div>
+       
+    </div>
+    <script src="question2.js"></script>
+</body>
+</html>

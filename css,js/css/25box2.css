@@ -1,0 +1,13 @@
+div{
+    width: 400px; height: 400px;
+    /* border-style: ridge;
+    background-color: silver;
+    border-width: 20px; */
+
+    border-top: darkorange solid 3px;
+    border-bottom: darkorchid double 5px;
+    border-left: silver dotted 5px;
+    border-right: silver dotted 5px;
+
+    padding: 20px 5px;
+}

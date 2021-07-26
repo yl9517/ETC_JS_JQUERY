@@ -1,0 +1,22 @@
+div{
+    width: 200px; height: 200px;
+    background-color: white;
+    box-shadow:10px 10px 10px 3px silver;
+}
+
+div.wrap{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 500px;
+    height: 300px;
+}
+div.tx{
+    padding: 100px 40px;
+    font-size: 50px;
+    color: black;
+    text-shadow: 0px 0px 4px red
+                ,0 -5px 4px orange
+                ,2px -10px 6px yellow
+                ,-2px -15px 11px green
+                ,2px -19px 18px blue
+}

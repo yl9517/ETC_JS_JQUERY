@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 400px; height: 50px;
+        }
+        input[name="book"]:checked{ /* 체크했을 때 스타일 (.b:checked 가 제일 좋은방법)  */
+            width: 20px; height: 20px;
+        }
+        input+label{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <form method="get" action="#">
+        <fieldset>
+            <legend>좋아하는 책 목록</legend>
+            <input type="checkbox" name="book" value="java" id="book1" class="b">
+            <label for="book1">java</label>
+            <input type="checkbox" name="book" value="php" id="book2" class="b">
+            <label for="book2">php</label>
+            <input type="checkbox" name="book" value="jsp" id="book3" class="b">
+            <label for="book3">jsp</label>
+        </fieldset>
+    </form>
+</body>
+</html>

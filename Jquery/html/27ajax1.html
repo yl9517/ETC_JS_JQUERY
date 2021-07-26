@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').on('click',function(){
+                $.ajax({    //서버에서 자료를 받아주는 방식
+                    type: 'GET'
+                    , url:'http://127.0.0.1:5500/js/27aa.js'
+                    , dataType:'script' //그 값이 어떤 타입이니
+                    , success:function(data) {  //성공 시
+                        console.log(data);
+                        hello('hong gil dong');
+                    }
+                    , error:function(data){   //실패 시
+                        alert('실패!!');
+                    }
+
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+    <div>hello</div>
+</body>
+</html>

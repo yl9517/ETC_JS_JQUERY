@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    border:  solid darkblue;
+    background-color: silver;
+}
+
+p{
+    border: 1px solid green;
+    width: 100px; height: 100px;
+}
+
+p.t1{
+    background-color: darkred;
+    position:fixed;
+    top:750px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/6op.js"></script>
+    <link rel="stylesheet" href="../css4/6op.css">
+    <!-- <script src="../js/6op2.js"></script> -->
+    <script src="../js/6op3.js"></script>
+</head>
+<body>
+    <form name="frm">
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" name="name" id="name">
+            </li>
+            <li>
+                <label for="kor">국어</label>
+                <input type="text" name="kor" id="kor">
+            </li>
+            <li>
+                <label for="eng">영어</label>
+                <input type="text" name="eng" id="eng">
+            </li>
+            <li>
+                <label for="math">수학</label>
+                <input type="text" name="math" id="math">
+            </li>
+            <li>
+                <!-- <input type="button" value="계 산" id="send" onclick="fn()">     ▶ op2.js 동작:onclick -->
+                <input type="button" value="계 산" id="send"> <!--      ▶ op3.js 아이디 끌고와서 onclick  (유지보수에 쉬움)  -->
+                <input type="reset" value="취 소">
+            </li>
+        </ul>
+    </form>
+
+    <ul id="result">
+
+    </ul>
+
+</body>
+</html>

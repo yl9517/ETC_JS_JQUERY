@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            document.getElementById("btn3").onclick=function(){
+                alert('hello')
+            }
+        }
+    </script>
+</head>
+<body>
+     <!-- 
+         size : 보여주는 길이
+         required : 반드시 입력
+         placeholder : 힌트
+         length : 길이제한
+         autofocus : 자동초점
+         readlonly : 읽기전용
+
+        -->
+    <form method="get" action="r.jsp">
+        <label for="id">아이디</label>
+        <input type="text" name="id" id="id" size="20" required 
+            placeholder="아이디를 입력하세요" minlength="3" autofocus>   
+    <br>
+        <label for="id">패스워드</label>
+        <input type="password" name="pwd" id="pwd"  required
+        placeholder="비밀번호를 입력하세요">
+    <br>
+        <label for="id">이름</label>
+        <input type="text" name="name" value="hong gil dong" readonly>  <!-- readlonly : 읽기전용 -->
+        <input type="hidden" name="data" value="hello" >  <!-- hidden : 숨김(데이터는 넘어감) -->
+    <br>
+        <input type="submit" value="전송" id="btn1">
+        <input type="reset" value="취소" id="btn2">
+        <input type="button" value="버튼" id="btn3">
+        <input type="image" src="../img/star.png" alt="별 이미지">
+        <button id="btn4"> 버튼을 누르시오 </button>
+
+    </form>
+</body>
+</html>

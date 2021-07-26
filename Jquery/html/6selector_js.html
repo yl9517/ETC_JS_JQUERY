@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <div class="t1">div-class t1 tag</div>
+    <div>div tag</div>
+    <p>p tag</p>
+    <div>div tag</div>
+    <p class="t1">p tag2</p>
+    <div>div tag</div>
+
+    <script>
+        $('div.t1').css('border','2px double red');  //border 속성 변경 .. (setter역할)
+        $('.t1').css('color','blue');
+        $('div .t1').css('backgroundColor','yellow');
+
+
+        let vborder  = $('div.t1').css('border');  //border속성 값을 받아오도록..(getter역할)
+        console.log(vborder);
+
+
+        $('div.t1').css({      //css 묶음
+            height:'400px'
+            , width:'500px'
+            , padding : '10px'
+            , backgroundColor : 'yellow'
+        });
+
+    </script>
+</body>
+</html>

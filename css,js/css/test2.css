@@ -1,0 +1,43 @@
+#wrap{
+    border:2px solid black;
+    width: 950px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.box{
+    padding: 20px;
+}
+header{
+    border:2px solid red;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+aside{
+    border:2px solid orange;
+    width: 15%; height: 75%;
+}
+
+aside ul li a{
+    color: black;
+    text-decoration: none;
+}
+aside#s2{
+    margin-left: 20px;
+}
+
+section{
+    border:2px solid green;  
+    width: 50%;
+}
+footer{
+    border:2px solid blue;
+    width: 100%;
+    padding: 25px 20px;
+    margin-top: 20px;
+}

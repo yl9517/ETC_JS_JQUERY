@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- file 전송 시 enctype="multipart/form-data"  -->
+    <form method="post" enctype="multipart/form-data">
+        <label for="f1">파일</label>
+        <input type="file" name="f1" id="f1">
+    <br>
+        <input type="color" name="bgcolor" id="bgcolor"> <br>
+        <input type="tel" name="mytel" id="mytel" required> <br>
+        <input type="url" name="homepage" id="homepage" required> <br>
+        <input type="email" name="myemail" id="myemail" required> <br>
+        <input type="number" name="su" id="su" min="10" step="5" max="30" value="15" > <br>
+        <input type="range" name="su2" id="su2" min="0" max="30" value="0" > <br>
+        <input type="date" name="class" min="2021-07-01" max="2021-08-31">
+
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

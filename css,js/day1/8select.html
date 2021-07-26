@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px; height: 100px;
+            background-color: yellow;
+            float: left;
+            margin-right: 5px;
+        }
+
+        div[title]{ /* title이라는 속성을 가지고 있는 div */
+            color: red;
+        }
+        div[title="hi a1"]{  /* title속성이 hi와 a1을 모두 가지고 있는 div */
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        div[title~="h"]{  /* title속성이 요구하는 문자중(hi) 하나만 일치해도 선택 */
+            border: 2px solid pink;
+        }
+        div[title*="h"]{  /* title속성이 h를 포함 */
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div title="hi a1">안녕하세요1</div>
+    <div title="hi hello a2">안녕하세요2</div>
+    <div title="hi a3">안녕하세요3</div>
+    <div title="hello a4">안녕하세요4</div>  
+    <div>안녕하세요5</div> 
+</body>
+</html>

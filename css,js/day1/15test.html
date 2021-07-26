@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 700px; height: 150px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black; 
+            text-align: left;
+            padding: 0px 10px;
+        }
+        thead{
+            background-color: yellow;
+        }
+        tbody tr:nth-child(even){
+            background-color: rgb(198, 178, 235);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr> <!-- 한 행 -->
+                <th>이름</th>
+                <th>주소</th>
+                <th>전화번호</th>
+                <th>이메일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>코스타</td>
+                <td>서울</td>
+                <td>111-1111</td>
+                <td>abc@aaa.com</td>
+            </tr>
+            <tr>
+                <td>코스타1</td>
+                <td>경기</td>
+                <td>222-2222</td>
+                <td>hello@daum.net</td>
+            </tr>
+            <tr>
+                <td>코스타2</td>
+                <td>경기</td>
+                <td>333-3333</td>
+                <td>Hello2naver.com</td>
+            </tr> 
+            <tr>
+                <td>코스타3</td>
+                <td>강원</td>
+                <td>555-5555</td>
+                <td>par@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

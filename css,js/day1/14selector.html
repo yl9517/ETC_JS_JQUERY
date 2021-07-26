@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1 div, .t1 p{
+            width: 100px;
+            height: 30px;
+        }
+
+        .t1 :first-child{ /* t1클래스의 첫번째 아이*/
+            color:red;
+        }
+
+        .t1:first-child{ /* 첫번째 t1 */
+            background-color: silver;
+        }
+
+        .t1 p:first-of-type{ /*t1의 첫번째 p*/
+            border:3px double blue;
+        }
+
+        .t1 :nth-child(even){  /* 짝수 */
+            border: 5px solid yellow;
+        }
+
+        .t1 :nth-child(odd){  /* 홀수 */
+            border: 5px solid pink;
+        }
+
+        .t1 :nth-child(3n+1){  /*  1..4..7.. */
+            background-color: tomato;
+        }
+
+        p:nth-child(3n+1){ /* 형제들중 1,4,7..번째가 p인 것*/
+           background-color: yellowgreen;
+       }
+
+    </style>
+
+</head>
+<body>
+    <!--   div(div.t1>div{eee&}+p{sample&}*2)*2    -->
+    <div class="t1">
+        <div>eee1</div>
+        <p>sample1</p>
+        <p>sample2</p>
+    </div>
+    <div class="t1">
+        <p>sample1</p>
+        <p>sample2</p>
+        <div>eee2</div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,27 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid silver;
+    /* display: inline-block; */
+}
+
+div.float1{
+    float: left;
+    background-color: yellow;
+}
+div.float2{
+    float: right;
+    background-color: cyan;
+}
+div.float3{
+    float: right;
+    background-color: green;
+}
+div.float4{
+    float: left;
+    background-color: orange;
+}
+p{
+    background-color: pink;
+    clear: both; /*float 취소*/
+}

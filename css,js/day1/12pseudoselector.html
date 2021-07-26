@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            display: inline-block;
+            padding: 10px 5px;
+            border: 1px solid silver;
+            text-decoration: none;
+            color:black;
+        }
+        a:link{ /* 링크에 대한 */
+            color:white;
+            background-color: darkblue;
+        }
+        a:hover{  /* 마우스 올려두었을때 */
+            color:red;
+            background-color: deepskyblue;
+        }
+        a:active{ /* 클릭 중 */
+            color:white;
+            background-color: tomato;
+        }
+        a:visited{ /* 방문 후 (지속) */
+            color: pink;
+            background-color: royalblue;
+        }
+
+        #name:focus{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com">네이버로</a>
+    <form method="get">
+        <input type="text" name="name" id="name">
+    </form>
+</body>
+</html>

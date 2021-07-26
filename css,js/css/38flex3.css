@@ -1,0 +1,29 @@
+div#wrap{
+    height: 500px;
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* 아래 붙이기 */
+    align-items: center; /* 부모요소 중 (세로기준) 가운데 */
+    align-items: baseline; /* 자신들 사이에서 (세로기준)가운데정렬 */
+    
+    flex-direction: column;
+    align-items: center; /* 부모요소 중 (가로기준) 가운데 */
+    align-items: flex-end;
+    
+    flex-wrap: wrap;
+
+}
+
+div.d1{
+    width: 200px;
+    height: 100px;
+}
+div.d1:nth-child(odd){
+    background-color: skyblue;
+    padding: 50px 0;
+}
+div.d1:nth-child(even){
+    background-color: pink;
+    padding: 30px 0px;
+}

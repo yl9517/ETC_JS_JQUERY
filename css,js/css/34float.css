@@ -1,0 +1,12 @@
+p{
+    text-align: justify;
+    text-indent: 12px; /* 들여쓰기 */
+    font-size: 12px;
+}
+figure{
+    float: left;
+}
+p.f1{
+    float: left;
+    width: 80%;
+}

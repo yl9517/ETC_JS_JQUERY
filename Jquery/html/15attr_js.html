@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 0 auto;
+            width: 470px;
+        }
+        img{
+            display: inline-block;
+            width: 150px; height: 150px;
+        }
+        #result{
+            position: relative;
+            top:-4px;
+            width: 456px; height: 460px;
+            border:1px solid silver;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div img').click(function(){
+
+                $('div img').css('border',''); //모든 스타일 초기화
+                let a = $(this).css('border','2px solid red').clone(); // clone() : 복사
+               
+                a.css({          //복제된 css 재지정
+                    width: '456px'
+                    , height: '460px'
+                    ,border:''
+                });
+
+                //result박스 비우고 사진 넣기     //$('#result').append(a);
+                $('#result').empty().append(a);
+
+                //$('#result').remove();  ▶ element 자체가 삭제
+                //$('#result').empty();  ▶ element 안의 내용이 삭제
+
+            });
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <div>
+        <img src="../img/avenue.jpg" alt="이미지1">
+        <img src="../img/back.jpg" alt="이미지2">
+        <img src="../img/img1.jpg" alt="이미지3">
+    </div>
+    <div id="result"></div>
+</body>
+</html>

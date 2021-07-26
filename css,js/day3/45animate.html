@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px; height: 100px;
+            background-color: blue;
+        }
+
+        /*#trans{
+            transition-property: background-color, border-radius;
+            transition-duration: 3s;
+            transition-delay: 2s;
+        }
+
+        #trans:hover{
+            background-color: red;
+            border-radius: 50px;
+        } */
+
+        div#trans{
+            animation-name: myani;
+            animation-duration: 3s; /* 걸리는 시간 */
+            animation-iteration-count: 4; /* 반복횟수 */
+            animation-iteration-count: infinite; /* 무한반복*/
+            animation-direction: alternate-reverse; /* 돌아갈때 역순으로 돌아가기 */
+        }
+
+        @keyframes myani{
+            0%{
+                background-color: red;
+                border-radius: 0;
+            }
+            /* 30%{
+                background-color: green;
+            } */
+            100%{
+                background-color: yellow;
+                border-radius: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="trans"></div>
+</body>
+</html>

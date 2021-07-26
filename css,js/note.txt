@@ -1,0 +1,76 @@
+데이터 타입 : primitive type - number, string, boolean
+             object type - 배열
+
+타입 체크 : typeof
+배열 체크 : Array.isArry()
+
+[반복문](for)
+- 객체 : for...in
+- 배열 : for...of
+
+[변수 선언] : let(블록), var(글로벌) - hoisting , const(블록:상수)
+
+[비교연산자]
+ - 값이 같은지(다른지) : ==, !=
+ - 값과 타입 모두 같은지(다른지) : ===, !==
+
+[배열] : let arr = []
+
+
+[기본 객체]
+number, string, date ...
+
+number() = 함수
+new numbeer() = 객체
+
+
+[객체생성]
+(1) 생성자 함수
+
+(2) 객체 리터럴
+const 이름 = {속성이름:값, 속성이름2:값2..}
+
+(3) object 생성자
+const 이름 = new object();
+이름.속성 = 값..
+
+
+
+[프로토타입] : 한번 선언하면 다같이 쓸수 있음
+객체 만들어진 후 사용   ex) let a =" " ;   a.concat("hi");
+
+[프로토타입이 아닌 것 = (static)]      ex) String.raw("어쩌구..");
+
+
+
+[객체 공동 메소드]
+객체이름.prototype.메소드명=function(){     //객체 바깥에
+
+}
+
+[클래스 선언] es6이후
+class Person{
+
+    constructor(name,age,addr){
+        this.name=name;
+        this.age=age;
+        this.addr=addr;
+    }
+}
+
+[객체복제] Object.assign(b,a);
+
+
+.join() : 배열의 모든 요소를 연결해 하나의 문자열로 만듦
+
+-------------------------
+DOM : html이나 body tag를 js에서 객체화 시킨 것
+    - 요소(Element),속성(attribute),내용(content)으로 구성
+
+  * node : elementNode, TestNode
+
+BOM : 브라우저 객체모델
+--------------------------
+json : 자바스크립트 객체 형태를 갖는 문자열
+    -JSON.parse() : json형식의 문자열을 js객체로 변환
+    -JSON.stringify() : js객체를 json형식의 문자열로 변환

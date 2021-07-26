@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let a = $('p').find('.middle');  //$('p .middle'); ▶ 자식 혹은 자손에서 middle
+            let b = $('p').filter('.middle'); //$('p.middle'); ▶ middle이라는 p
+            console.log(a);  //hello
+            console.log(b);  //middletext
+        });
+    </script>
+</head>
+<body>
+    <p>text</p>
+    <p class="middle">middle<span>text</span></p>
+    <p>text<span  class="middle">hello</span></p>
+</body>
+</html>

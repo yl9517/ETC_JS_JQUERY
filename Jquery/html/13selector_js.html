@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // let a = $('p').filter('.middle'); //p중 middle클래스명이 찾기
+            // console.log(a);
+
+            let b = $('p').filter('.middle').end(); //end() : 바로 전단계로 (=모든 p태그)
+            console.log(b);
+
+            let c = $('p').filter('.middle').find('span')
+                        .css('color','yellow')          //p.middle span
+                        .end().css('border','2px solid green') //p.middle
+                        .end().css('backgroundColor','pink'); //p태그
+
+            let a1 = $('p').parent();
+            let a2 = $('p').parents();
+
+            console.log(a1);
+            console.log(a2);
+        });
+    </script>
+</head>
+<body>
+    <p>text</p>
+    <p class="middle">middle<span>text</span></p>
+    <p>text</p>
+</body>
+</html>

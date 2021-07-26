@@ -1,0 +1,9 @@
+div{
+    padding: 20px 30px;
+    border: 2px solid silver;
+    background-color: lightblue;
+    float: left;
+    margin-right: 20px;;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px -1px pink inset;
+}

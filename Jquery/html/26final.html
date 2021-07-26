@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px; height: 150px;
+            background-color: silver;
+            display: none;  /* none이라서 내용 안보임 */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').on('click', function(){
+                // $('div').show(1000,function(){  //1초 걸려서 보여줌
+                //     alert('complete');
+                // });
+
+                $('div').fadeIn(2000);
+
+
+            });
+
+            $('#btn2').on('click', function(){
+                // $('div').hide(500,function(){ //0.5초 걸려서 숨김
+                //     alert('complete');
+                // });
+
+                $('div').fadeOut(3000);
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <input type="button" id="btn" value="show">
+    <input type="button" id="btn2" value="hide">
+    <div>eeee</div>
+</body>
+</html>

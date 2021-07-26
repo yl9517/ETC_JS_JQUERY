@@ -1,0 +1,15 @@
+div{
+    width: 500px; height: 500px;
+    border:2px solid silver;
+    background-image: url("../img/star.png");
+    /* background-repeat: repeat-x; */ 
+    background-repeat: no-repeat; 
+    /* background-repeat: space; */
+    /* background-repeat: round; */
+
+    /* background-position: 20% 50%; */
+    background-position: center center;
+
+    background-size: contain; /* 사진 비율 유지한 채 가능한 채우기*/
+    background-size: cover; /* 사진비율 변경OK 전체 씌우기*/
+}

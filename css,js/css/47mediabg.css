@@ -1,0 +1,7 @@
+@media screen and (min-width: 320px) and (max-width:768px){
+    body{
+        background-color: aqua;
+    }
+}
+@import url("1bg2.css") screen and (min-width:769px) and (max-width:1023px);
+@import url("1bg3.css") screen and (min-width:1024px);
